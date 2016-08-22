@@ -1,0 +1,331 @@
+﻿/*
+  
+    GUIDE PANEL    Third Monitor -> All Monitor  
+    
+    
+    */
+#GuidePanel{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:5760px;
+    height:1080px;
+    overflow : hidden;
+}
+
+
+#GuidePanel #posterNoti{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:5760px;
+    height:1080px;
+    display:none;
+}
+
+#GuidePanel #posterNoti #ment1{
+    position:absolute;
+    left:0px;
+    bottom:12px;
+    width:1920px;
+    height:100px;
+    font-family:"Noto Sans CJK KR";
+    font-size:72px;
+    color:white;
+    text-align:center;
+    text-shadow:0px 0px 15px 0px rgba(238,238,238,0.5);
+}
+
+#GuidePanel #posterNoti #ment2{
+    position:absolute;
+    left:1920px;
+    bottom:12px;
+    width:1920px;
+    height:100px;
+    font-family:"Noto Sans CJK KR";
+    font-size:72px;
+    color:white;
+    text-align:center;
+    text-shadow:0px 0px 15px 0px rgba(238,238,238,0.5);
+}
+
+
+
+#GuidePanel #posterNoti #finger{
+    position:absolute;
+    left:2050px;
+    bottom:0px;
+     width:384px;
+     height:860px;
+     background-image:url("/images/guideview/hand_04.png");
+}
+
+#GuidePanel #arrowNoti {
+    position:absolute;
+    left:3840px;
+    top:0px;
+    width:1920px;
+    height:1080px;
+    overflow:hidden;
+}
+#GuidePanel #arrowNoti #left {
+    position:absolute;
+    left:0px;
+    top:495px;
+    width:90px;
+    height:90px;
+}
+
+#GuidePanel #arrowNoti #right {
+    position:absolute;
+    right:0px;
+    top:495px;
+    width:90px;
+    height:90px;
+}
+
+#GuidePanel #arrowNoti #left #img{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:90px;
+    height:90px;
+}
+
+
+#GuidePanel #arrowNoti #right #img{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:90px;
+    height:90px;
+}
+
+
+#GuidePanel #backNoti{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:3840px;
+    height:1080px;
+    display:none;
+}
+
+#GuidePanel #backNoti #ment1{
+    position:absolute;
+    left:0px;
+    bottom:12px;
+    width:1920px;
+    height:100px;
+    font-family:"Noto Sans CJK KR";
+    font-size:72px;
+    color:white;
+    text-align:center;
+    text-shadow:0px 0px 15px 0px rgba(238,238,238,0.5);
+   
+}
+
+#GuidePanel #backNoti #ment2{
+    position:absolute;
+    left:1920px;
+    bottom:12px;
+    width:1920px;
+    height:100px;
+    font-family:"Noto Sans CJK KR";
+    font-size:72px;
+    color:white;
+    text-align:center;
+    text-shadow:0px 0px 15px 0px rgba(238,238,238,0.5);
+}
+
+#GuidePanel #lockNoti{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:3840px;
+    height:1080px;
+    display:none;
+}
+
+
+#GuidePanel #lockNoti #finger{
+    position:absolute;
+    left:3010px;
+    bottom:-200px;
+    width:384px;
+    height:860px;
+    background-image:url("/images/guideview/hand_04.png");
+}
+
+#GuidePanel #lockNoti #background{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:3840px;
+    height:1080px;
+    text-align:center;
+    background-image:url("/images/guideview/bg_02.png");
+    opacity:0.9;
+}
+
+#GuidePanel #lockNoti #button1{
+    position:absolute;
+    left:3010px;
+    bottom:360px;
+    width:390px;
+    height:360px;
+}
+
+#GuidePanel #lockNoti #buttonImg1.normal{
+    width:100%;
+    height:100%;
+}
+
+#GuidePanel #lockNoti #buttonImg1.down {
+     display: none;
+     width: 100%;
+     height: 100%;
+}
+
+#GuidePanel #lockNoti #button2{
+    position:absolute;
+    left:440px;
+    bottom:360px;
+    width:390px;
+    height:360px;
+}
+
+#GuidePanel #lockNoti #buttonImg2.normal{
+    width:100%;
+    height:100%;
+}
+
+#GuidePanel #lockNoti #buttonImg2.down {
+     display: none;
+     width: 100%;
+     height: 100%;
+}
+
+#GuidePanel #lockNoti #lockVideo{
+    position:absolute;
+    left:3840px;
+    top:0px;
+    width:1920px;
+    height:1080px;
+    opacity:0.9;
+}
+
+#GuidePanel #lockNoti #ment1{
+    position:absolute;
+    left:980px;
+    top :490px;
+    width:1920px;
+    height:100px;
+    font-family:"Noto Sans CJK KR";
+    font-size:72px;
+    color:white;
+    text-align:center;
+    text-shadow:0px 0px 15px 0px rgba(238,238,238,0.5);
+}
+
+#GuidePanel #lockNoti #ment2{
+    position:absolute;
+    left:1030px;
+    top :590px;
+    width:1920px;
+    height:100px;
+    font-family:"Noto Sans CJK KR";
+    font-size:72px;
+    color:white;
+    text-align:center;
+    text-shadow:0px 0px 15px 0px rgba(238,238,238,0.5);
+}
+
+
+
+#GuidePanel #littleLockNoti{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:3840px;
+    height:330px;
+    display:none;
+}
+
+#GuidePanel #littleLockNoti #ment1{
+    position:absolute;
+    left:980px;
+    bottom:-140px;
+    width:1920px;
+    height:100%;
+    font-family:"Noto Sans CJK KR";
+    font-size:72px;
+    color:white;
+    text-align:center;
+    text-shadow:0px 0px 15px 0px rgba(238,238,238,0.5);
+}
+
+
+#GuidePanel #littleLockNoti #background{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:3840px;
+    height:330px;
+    text-align:center;
+    background-color:rgba(0,0,0,0.8);
+}
+
+
+#GuidePanel #littleLockNoti #button1{
+    position:absolute;
+    left:3060px;
+    top:25px;
+    width:300px;
+    height:270px;
+}
+
+#GuidePanel #littleLockNoti #buttonImg1.normal{
+    width:100%;
+    height:100%;
+}
+
+#GuidePanel #littleLockNoti #buttonImg1.down {
+     display: none;
+     width: 100%;
+     height: 100%;
+}
+
+#GuidePanel #littleLockNoti #button2{
+    position:absolute;
+    left:480px;
+    top:25px;
+    width:300px;
+    height:270px;
+}
+
+#GuidePanel #littleLockNoti #buttonImg2.normal{
+    width:100%;
+    height:100%;
+}
+
+#GuidePanel #littleLockNoti #buttonImg2.down {
+     display: none;
+     width: 100%;
+     height: 100%;
+}
+
+
+#GuidePanel .effect{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow:rgba(0,0,0,0.4) 0px 0px 10px 0px;
+    display: none;
+}
+

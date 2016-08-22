@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>Hyundai</title>
+    
+    <!-- Bootstrap.css -->
+    <link rel="stylesheet" href="public/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+
+    <!-- style.css -->
+    <link  rel = "stylesheet" href = "public/css/style.css">
+
+</head>
+<body>
+	
+	<div id = "content">
+		
+		<div id = "titlebar">
+			<div id = "titlebar_logo"></div>
+			<div id = "titlebar_set"></div>
+			<div id = "titlebar_divide"></div>
+			<div id = "titlebar_min"></div>
+			<div id = "titlebar_close"></div>
+		</div>
+		<div id = "titlebar_border_bottom"></div>
+		
+		<div id = "panel_view">
+			
+			<div id = "view_frame">
+	
+				<div id = "kinect"></div>
+				<div class = "hit" id = "user0R"></div>
+				<div class = "hit" id = "user0L"></div>
+				<div class = "hit" id = "user1R"></div>
+				<div class = "hit" id = "user1L"></div>
+				<div class = "hit" id = "user2R"></div>
+				<div class = "hit" id = "user2L"></div>
+				<div class = "hit" id = "user3R"></div>
+				<div class = "hit" id = "user3L"></div>
+				<div class = "hit" id = "user4R"></div>
+				<div class = "hit" id = "user4L"></div>
+				<div class = "hit" id = "user5R"></div>
+				<div class = "hit" id = "user5L"></div>
+						
+			</div>
+			
+			<div id = "scale5"></div>
+			<div id = "btn_save"></div>
+			
+		</div>
+		
+		<div id = "btn_more"><div id = "btn_more_img"></div></div>
+		
+		<div id = "btn_start"></div>
+		<div id = "btn_stop"></div>
+		
+		<div id = "panels">
+			
+			<!-- panel_run -->
+			<div id = "panel_run">
+				
+				<div id = "panel_run_text_port">PORT :</div>
+				<input type="text" id = "panel_run_input_text_port" value = "50416" />
+				
+				<div id = "panel_run_check_auto_nor"></div>
+				<div id = "panel_run_check_auto_sel"></div>
+				
+			</div>
+			
+			<!-- panel_kinect -->
+			<div id = "panel_kinect">
+				
+				<div id = "panel_kinect_text_title">Kinect</div>
+				<div id = "panel_kinect_border_title"></div>
+				
+				<div id = "panel_kinect_text_position">Position</div>
+				<div id = "panel_kinect_position_divide1"></div>
+				<div id = "panel_kinect_text_position_x">x : </div>
+				<input type = "text" id = "kinect_position_x" value = "0" />
+				<div id = "panel_kinect_position_divide2"></div>
+				<div id = "panel_kinect_text_position_y">y : </div>
+				<input type = "text" id = "kinect_position_y" value = "0" />
+				<div id = "panel_kinect_position_divide3"></div>
+				<div id = "panel_kinect_text_position_z">z : </div>
+				<input type = "text" id = "kinect_position_z" value = "0" />
+				
+				<div id = "panel_kinect_border2"></div>
+								
+				<div id = "panel_kinect_text_angle">Angle</div>
+				<div id = "panel_kinect_angle_divide1"></div>
+				<div id = "panel_kinect_text_angle_x">x : </div>
+				<input type = "text" id = "kinect_angle_x" value = "0" />
+				<div id = "panel_kinect_angle_divide2"></div>
+				<div id = "panel_kinect_text_angle_y">y : </div>
+				<input type = "text" id = "kinect_angle_y" value = "0" />
+				<div id = "panel_kinect_angle_divide3"></div>
+				<div id = "panel_kinect_text_angle_z">z : </div>
+				<input type = "text" id = "kinect_angle_z" value = "0" disabled = "disabled" />
+						
+			</div>
+			
+			<!-- panel_objects -->
+			<div id = "panel_objects">
+				
+				<div id = "panel_objects_text_title">Objects</div>
+				<div id = "panel_objects_border_title"></div>
+				
+				<div id = "panel_objects_img_sz"></div>
+				<div id = "panel_objects_img_wh"></div>
+				
+				<div id = "objects"></div>
+					
+			</div>
+			
+			<!-- panel_users -->
+			<div id = "panel_users">
+				
+				<div id = "panel_users_text_title">User</div>
+				<div id = "panel_users_border_title"></div>
+				
+				<div id = "panel_users_img_io"></div>
+				<div id = "panel_users_img_lock"></div>
+				<div id = "panel_users_img_eye"></div>
+				
+				<div id = "users">
+					
+					<div class = "user" id = "user0">
+						<div class = "text_name">User 1</div>
+						<div class = "divide1"></div>
+						<div class = "text_io"></div>
+						<div class = "divide2"></div>
+						<div class = "text_lock"></div>
+						<div class = "divide3"></div>
+						<div class = "text_eye"></div>
+					</div>
+					
+					<div class = "user_border"></div>
+					
+					<div class = "user" id = "user1">
+						<div class = "text_name">User 2</div>
+						<div class = "divide1"></div>
+						<div class = "text_io"></div>
+						<div class = "divide2"></div>
+						<div class = "text_lock"></div>
+						<div class = "divide3"></div>
+						<div class = "text_eye"></div>
+					</div>
+					
+					<div class = "user_border"></div>
+					
+					<div class = "user" id = "user2">
+						<div class = "text_name">User 3</div>
+						<div class = "divide1"></div>
+						<div class = "text_io"></div>
+						<div class = "divide2"></div>
+						<div class = "text_lock"></div>
+						<div class = "divide3"></div>
+						<div class = "text_eye"></div>
+					</div>
+					
+					<div class = "user_border"></div>
+					
+					<div class = "user" id = "user3">
+						<div class = "text_name">User 4</div>
+						<div class = "divide1"></div>
+						<div class = "text_io"></div>
+						<div class = "divide2"></div>
+						<div class = "text_lock"></div>
+						<div class = "divide3"></div>
+						<div class = "text_eye"></div>
+					</div>
+					
+					<div class = "user_border"></div>
+					
+					<div class = "user" id = "user4">
+						<div class = "text_name">User 5</div>
+						<div class = "divide1"></div>
+						<div class = "text_io"></div>
+						<div class = "divide2"></div>
+						<div class = "text_lock"></div>
+						<div class = "divide3"></div>
+						<div class = "text_eye"></div>
+					</div>
+					
+					<div class = "user_border"></div>
+					
+					<div class = "user" id = "user5">
+						<div class = "text_name">User 6</div>
+						<div class = "divide1"></div>
+						<div class = "text_io"></div>
+						<div class = "divide2"></div>
+						<div class = "text_lock"></div>
+						<div class = "divide3"></div>
+						<div class = "text_eye"></div>
+					</div>
+				
+				</div>
+				
+			</div>
+			
+			<!-- panel_log -->
+			<div id = "panel_logs">
+				
+				<div id = "panel_logs_text_title">Logs</div>
+				<div id = "panel_logs_border_title"></div>
+				<div id = "panel_logs_text"></div>
+				
+			</div>
+			
+		</div>
+
+	</div>
+	
+	<!-- jQuery -->
+    <script type = "text/javascript" src = "js/lib/jquery-1.11.2.min.js"></script>
+    <script type = "text/javascript" src = "js/lib/jquery-ui-1.11.3.custom/jquery-ui.js"></script>
+    
+    <!-- main.js -->
+    <script type = "text/javascript" src = "js/application.js"></script>
+    <script type = "text/javascript" src = "js/main.js"></script>
+
+</body>
+
+</html>

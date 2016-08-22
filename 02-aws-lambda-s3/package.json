@@ -1,0 +1,24 @@
+{
+  "name": "aws-lambda-s3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./upload.zip && zip -r upload.zip ./* && aws lambda update-function-code --function-name lotte-report --zip-file fileb://upload.zip --profile lambda && rm -rf ./upload.zip",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtouchinc/lotte-report.git"
+  },
+  "author": "Woongjae Lee <@2woongjae>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtouchinc/lotte-report/issues"
+  },
+  "homepage": "https://github.com/vtouchinc/lotte-report#readme",
+  "dependencies": {
+    "moment": "^2.13.0",
+    "request": "^2.72.0"
+  }
+}

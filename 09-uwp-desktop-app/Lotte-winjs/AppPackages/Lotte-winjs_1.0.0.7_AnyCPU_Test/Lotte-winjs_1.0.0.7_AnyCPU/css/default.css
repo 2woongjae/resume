@@ -1,0 +1,7 @@
+﻿* {border:none; padding:0px; margin:0px;}
+
+#DebugPanel{
+    position:absolute;
+    bottom:0px;
+    z-index:50;
+}

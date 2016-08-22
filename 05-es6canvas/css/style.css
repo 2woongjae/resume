@@ -1,0 +1,93 @@
+﻿@font-face {
+    
+    font-family: 'Noto Sans CJK KR Light';
+    src: url('../app/fonts/NotoSans-Light.otf') format('opentype');
+    
+}
+
+@font-face {
+  
+  font-family: 'Helvetica Neue LT Pro';
+  src: url("../app/fonts/HelveticaNeueLTPro-67.otf") format('opentype');
+  
+}
+
+@font-face {
+  
+  font-family:"Script MT Std";
+  src:url("../app/fonts/End.otf") format('opentype');
+  
+}
+
+@font-face {
+  
+  font-family:"Light hel 55";
+  src:url("../app/fonts/Hel_55.otf") format('opentype');
+  
+}
+
+@font-face {
+  
+  font-family:"Noto Sans CJK KR Thin";
+  src:url("../app/fonts/NotoSans-Thin.otf") format('opentype');
+  
+}
+
+body {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    
+    margin: 0;
+    padding: 0;
+    border: none;
+    
+    overflow: hidden;
+}
+
+#fps {
+    
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    
+    padding-top: 5px;
+    
+    top: 80px;
+    left: 100px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    z-index: 10000;
+    
+    color: white;
+    text-align: center;
+    
+}
+
+#debug {
+    
+    position: absolute;
+    width: 600px;
+    min-height: 70px;
+    
+    top:130px;
+    left:100px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    
+}
+
+#video {
+    
+    position: absolute;
+    width: 960px;
+    height: 540px;
+    
+    top: 0px;
+    left:0px;
+    
+    z-index: 9999;
+    
+}

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LOTTESE</Machine>
+    <WindowsUser>LotteCinema</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>06ac7a95-f2e9-4a32-82bd-111fc54b3d3a</PackageIdentityName>
+    <IntermediateOutputPath>D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\x64\Release\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>D3F7E70A6908D8562296A00E4449AD7567546E6A538A8D58CB568428192F44D5</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.1_x64__96z1d7kvc7eh2</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_96z1d7kvc7eh2!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>06ac7a95-f2e9-4a32-82bd-111fc54b3d3a</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Chunghoon</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.1</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\bin\x64\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-07T08:27:41.641</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\accordion.css">
+      <PackagePath>Content\themes\base\accordion.css</PackagePath>
+      <Modified>2015-04-29T01:13:34.139</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\all.css">
+      <PackagePath>Content\themes\base\all.css</PackagePath>
+      <Modified>2015-04-29T01:13:34.062</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\autocomplete.css">
+      <PackagePath>Content\themes\base\autocomplete.css</PackagePath>
+      <Modified>2015-04-29T01:13:33.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\base.css">
+      <PackagePath>Content\themes\base\base.css</PackagePath>
+      <Modified>2015-04-29T01:13:33.870</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\button.css">
+      <PackagePath>Content\themes\base\button.css</PackagePath>
+      <Modified>2015-04-29T01:13:33.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\core.css">
+      <PackagePath>Content\themes\base\core.css</PackagePath>
+      <Modified>2015-04-29T01:13:33.702</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\datepicker.css">
+      <PackagePath>Content\themes\base\datepicker.css</PackagePath>
+      <Modified>2015-04-29T01:13:33.633</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\dialog.css">
+      <PackagePath>Content\themes\base\dialog.css</PackagePath>
+      <Modified>2015-04-29T01:13:33.545</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\draggable.css">
+      <PackagePath>Content\themes\base\draggable.css</PackagePath>
+      <Modified>2015-04-29T01:13:33.454</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\menu.css">
+      <PackagePath>Content\themes\base\menu.css</PackagePath>
+      <Modified>2015-04-29T01:13:32.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\progressbar.css">
+      <PackagePath>Content\themes\base\progressbar.css</PackagePath>
+      <Modified>2015-04-29T01:13:32.250</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\resizable.css">
+      <PackagePath>Content\themes\base\resizable.css</PackagePath>
+      <Modified>2015-04-29T01:13:32.165</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\selectable.css">
+      <PackagePath>Content\themes\base\selectable.css</PackagePath>
+      <Modified>2015-04-29T01:13:32.076</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\selectmenu.css">
+      <PackagePath>Content\themes\base\selectmenu.css</PackagePath>
+      <Modified>2015-04-29T01:13:31.988</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\slider.css">
+      <PackagePath>Content\themes\base\slider.css</PackagePath>
+      <Modified>2015-04-29T01:13:31.906</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\sortable.css">
+      <PackagePath>Content\themes\base\sortable.css</PackagePath>
+      <Modified>2015-04-29T01:13:31.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\spinner.css">
+      <PackagePath>Content\themes\base\spinner.css</PackagePath>
+      <Modified>2015-04-29T01:13:31.734</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\tabs.css">
+      <PackagePath>Content\themes\base\tabs.css</PackagePath>
+      <Modified>2015-04-29T01:13:31.670</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\theme.css">
+      <PackagePath>Content\themes\base\theme.css</PackagePath>
+      <Modified>2015-04-29T01:13:31.583</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\tooltip.css">
+      <PackagePath>Content\themes\base\tooltip.css</PackagePath>
+      <Modified>2015-04-29T01:13:31.482</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\css\panel\GuidePanel.css">
+      <PackagePath>css\panel\GuidePanel.css</PackagePath>
+      <Modified>2015-05-07T02:16:08.153</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\css\panel\PosterPanel.css">
+      <PackagePath>css\panel\PosterPanel.css</PackagePath>
+      <Modified>2015-05-07T01:30:38.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\css\panel\VideoPanel.css">
+      <PackagePath>css\panel\VideoPanel.css</PackagePath>
+      <Modified>2015-05-07T02:15:51.413</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2015-05-07T06:29:03.524</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <PackagePath>Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png</PackagePath>
+      <Modified>2015-04-29T01:13:33.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png">
+      <PackagePath>Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png</PackagePath>
+      <Modified>2015-04-29T01:13:33.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png</PackagePath>
+      <Modified>2015-04-29T01:13:33.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png</PackagePath>
+      <Modified>2015-04-29T01:13:33.128</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png</PackagePath>
+      <Modified>2015-04-29T01:13:33.043</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png</PackagePath>
+      <Modified>2015-04-29T01:13:32.978</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png</PackagePath>
+      <Modified>2015-04-29T01:13:32.901</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <PackagePath>Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png</PackagePath>
+      <Modified>2015-04-29T01:13:32.834</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-icons_222222_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_222222_256x240.png</PackagePath>
+      <Modified>2015-04-29T01:13:32.774</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-icons_2e83ff_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_2e83ff_256x240.png</PackagePath>
+      <Modified>2015-04-29T01:13:32.685</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-icons_454545_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_454545_256x240.png</PackagePath>
+      <Modified>2015-04-29T01:13:32.608</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-icons_888888_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_888888_256x240.png</PackagePath>
+      <Modified>2015-04-29T01:13:32.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Content\themes\base\images\ui-icons_cd0a0a_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_cd0a0a_256x240.png</PackagePath>
+      <Modified>2015-04-29T01:13:32.442</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-21T12:19:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\posterview\select.png">
+      <PackagePath>images\posterview\select.png</PackagePath>
+      <Modified>2015-04-30T09:12:24.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-21T12:19:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-21T12:19:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-21T12:19:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\videoview\back.png">
+      <PackagePath>images\videoview\back.png</PackagePath>
+      <Modified>2015-04-30T09:22:14.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\videoview\left.png">
+      <PackagePath>images\videoview\left.png</PackagePath>
+      <Modified>2015-04-30T09:39:02.209</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\videoview\popup.png">
+      <PackagePath>images\videoview\popup.png</PackagePath>
+      <Modified>2015-04-30T09:14:23.392</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\videoview\popup_effect.png">
+      <PackagePath>images\videoview\popup_effect.png</PackagePath>
+      <Modified>2015-04-30T09:21:56.434</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\videoview\right.png">
+      <PackagePath>images\videoview\right.png</PackagePath>
+      <Modified>2015-04-30T09:39:02.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\videoview\Sprite-transprency2.png">
+      <PackagePath>images\videoview\Sprite-transprency2.png</PackagePath>
+      <Modified>2015-05-04T12:07:18.944</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\videoview\unlock_01.png">
+      <PackagePath>images\videoview\unlock_01.png</PackagePath>
+      <Modified>2015-04-30T09:09:26.868</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\videoview\unlock_02.png">
+      <PackagePath>images\videoview\unlock_02.png</PackagePath>
+      <Modified>2015-04-30T09:09:27.030</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\images\videoview\want.png">
+      <PackagePath>images\videoview\want.png</PackagePath>
+      <Modified>2015-04-30T09:21:33.757</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2015-05-07T06:28:27.197</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\js\app.js">
+      <PackagePath>js\app.js</PackagePath>
+      <Modified>2015-05-07T07:47:20.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2015-05-07T06:25:56.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\js\panel\GuidePanel.js">
+      <PackagePath>js\panel\GuidePanel.js</PackagePath>
+      <Modified>2015-05-07T07:45:33.471</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\js\panel\PosterPanel.js">
+      <PackagePath>js\panel\PosterPanel.js</PackagePath>
+      <Modified>2015-05-07T07:47:32.340</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\js\panel\VideoPanel.js">
+      <PackagePath>js\panel\VideoPanel.js</PackagePath>
+      <Modified>2015-05-07T08:15:29.477</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Scripts\jquery-2.1.3.intellisense.js">
+      <PackagePath>Scripts\jquery-2.1.3.intellisense.js</PackagePath>
+      <Modified>2015-04-29T01:12:10.490</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Scripts\jquery-2.1.3.js">
+      <PackagePath>Scripts\jquery-2.1.3.js</PackagePath>
+      <Modified>2015-04-29T01:12:10.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Scripts\jquery-2.1.3.min.js">
+      <PackagePath>Scripts\jquery-2.1.3.min.js</PackagePath>
+      <Modified>2015-04-29T01:12:10.870</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Scripts\jquery-ui-1.11.4.js">
+      <PackagePath>Scripts\jquery-ui-1.11.4.js</PackagePath>
+      <Modified>2015-04-29T01:13:31.215</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Scripts\jquery-ui-1.11.4.min.js">
+      <PackagePath>Scripts\jquery-ui-1.11.4.min.js</PackagePath>
+      <Modified>2015-04-29T01:13:31.146</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Scripts\socket.io.js">
+      <PackagePath>Scripts\socket.io.js</PackagePath>
+      <Modified>2015-03-26T12:42:21.454</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\packages.config">
+      <PackagePath>packages.config</PackagePath>
+      <Modified>2015-04-29T01:13:34.226</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\Scripts\jquery-2.1.3.min.map">
+      <PackagePath>Scripts\jquery-2.1.3.min.map</PackagePath>
+      <Modified>2015-04-29T01:12:10.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\16. Lotte\Lotte-winjs\Lotte-winjs\bin\x64\Release\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-05-07T08:28:49.708</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

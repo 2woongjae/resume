@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Lotte</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 부트스트랩 -->
+    <link href="/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+      
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="/javascripts/respond/respond.js"></script>
+    <![endif]-->
+	
+	<body>
+		
+		<!-- Fixed navbar -->
+	    <nav class="navbar navbar-default navbar-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="/">VTOUCH LOTTE CINEMA</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/wall">Wall</a></li>
+	          </ul>
+            <ul class="nav navbar-nav">
+	            <li><a href="/movie">Movie</a></li>
+	          </ul>
+                  <ul class="nav navbar-nav">
+                    <li><a href="/system">System</a></li>
+                  </ul>
+	          <ul class="nav navbar-nav">
+	            <li><a href="/logout">Logout</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
+	
+	    <div class="container">
+
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"># 영화 관리</div>
+        <div class="panel-body">
+          <p>영화를 관리할 수 있습니다.</p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+
+          <li class="list-group-item">
+            
+            <table class="table table-bordered">
+
+              <thead>
+              <tr>
+                <th>포스터</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>날짜</th>
+              </tr>
+            </thead>
+            <tbody id = "list">
+            </tbody>
+
+            </table>
+
+          </li>
+
+          <li class="list-group-item" style = "text-align:center;">
+            
+            <nav>
+              <ul class="pagination"></ul>
+            </nav>
+  
+          </li>
+
+          <li class="list-group-item" style = "text-align:right;">         
+            <button id = "btn_add">add</button>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div> <!-- /container -->
+
+	    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요한) -->
+		<script src="/javascripts/jquery/1.11.2/jquery-1.11.2.min.js"></script>
+	    <!-- 모든 합쳐진 플러그인을 포함하거나 (아래) 필요한 각각의 파일들을 포함하세요 -->
+	    <script src="/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+			
+		<script>
+	
+			$(function() {
+
+      $("#btn_add").click(function() {
+
+        location.href = "/movie/add";
+
+      });
+
+      app.init();
+
+    });
+
+    var app = {
+      page:null,
+      movies:null,
+      page_list_size:10,
+      page_size:10
+    };
+
+    app.init = function() {
+
+      app.page = 1;
+
+      app.list();
+
+    };
+
+    app.list = function() {
+
+      $.get("/list", function(data) {
+
+        app.movies = data;
+
+        $("#list").html("");
+
+        var total_page = Math.ceil(app.movies.length / app.page_size);
+
+        var start = (app.page - 1) * app.page_size;
+        var end = (start + app.page_size > app.movies.length) ? app.movies.length : start + app.page_size;
+
+        for (var i = start; i < end; i++) {
+ 
+          $("#list").append("<tr>"
+                            + "<td>"
+                              + "<a href=\"#\" class=\"thumbnail\">"
+                                + "<img src = \"" + data[i].poster_url + "\" width=\"200\" ></a>"
+                            + "</td>"
+                            + "<td>" + data[i].title + "</td>"
+                            + "<td>" + data[i].reg_id + "</td>"
+                            + "<td>" + app.change_date(data[i].reg_date) + "</td>"
+                          + "</tr>");
+
+        }
+
+        var start_page = Math.floor((app.page - 1) / app.page_list_size) * app.page_list_size + 1; 
+        var end_page = start_page + app.page_list_size - 1;
+
+        $(".pagination").html("");
+        
+        if (total_page < end_page) end_page = total_page;
+
+        if (start_page >= app.page_list_size) {
+
+          var prev_list = (start_page - 2) * app.page_size;
+          
+          $(".pagination").append("<li><a href=\"#\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li>");
+
+        }
+
+        for (var i = start_page; i <= end_page; i++) {
+
+          if (app.page != i) $(".pagination").append("<li><a class=\"page-on\" href=\"#\">" + i + "</a></li>");
+          else $(".pagination").append("<li class=\"active\"><a class=\"page\" href=\"#\">" + i + "</a></li>");
+
+        }
+
+        if (total_page > end_page) {
+            
+          var next_list = end_page * app.page_size;
+          $(".pagination").append("<li><a href=\"#\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li>");
+
+        }      
+
+        $(".pagination .page-on").click(function() {
+
+          app.move(Number(this.text));
+
+        });
+
+      });
+
+    };
+
+    app.move = function(_page) {
+
+      app.page = _page;
+
+      app.list();
+
+    };
+    
+    app.change_date = function(_str) {
+      
+      var year = _str.substring(0, 4);
+      var month = _str.substring(4, 6);    
+      var day = _str.substring(6, 8);
+      
+      return year + "년 " + month + "월 " + day + "일";
+      
+    };
+					
+		</script>
+		
+	</body>
+	
+</html>

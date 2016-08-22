@@ -1,0 +1,19 @@
+.panels:after { content:""; display:block; clear:both; }
+.btns {margin-top:20px;}
+
+.movie {
+	position:relative;
+	width:124px;
+	height:180px;
+	background-color:black;
+	float:left;
+}
+
+#movie0 {margin-right:4px;}
+#movie1 {margin-right:4px;}
+#movie2 {margin-right:20px;}
+#movie3 {margin-right:4px;}
+#movie4 {margin-right:4px;}
+#movie5 {margin-right:4px;}
+
+#result {min-height:100px;margin-top:20px;}

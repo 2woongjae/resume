@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="3.4" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 K" PER_USER_APPLICATION="" PARTIAL_RUN="TRUE" LCID="1042" VALIDATION_TYPE="UI" ReportGenerationTime="2015-05-07 오후 5:46:57" ID="b4e19e38007a7e16f67efab69a0107ec">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="복원 가능한 새로 설치 테스트" RATIONALE="복원 가능한 새로 설치를 통해 시스템에서 응용 프로그램을 정상적으로 관리(배포 및 제거)할 수 있습니다." />
+    <REQUIREMENT NUMBER="2" TITLE="올바른 폴더에 설치 테스트" RATIONALE="Windows는 파일 시스템에 프로그램과 소프트웨어 구성 요소, 공유 앱 데이터 및 사용자별 앱 데이터를 저장할 특정 위치를 제공합니다." />
+    <REQUIREMENT NUMBER="3" TITLE="디지털 서명된 파일 테스트" RATIONALE="사용자는 Authenticode 디지털 서명을 통해 소프트웨어가 정품임을 확인할 수 있습니다. 또한 파일이 변경되었는지(예: 바이러스에 감염) 여부도 알 수 있습니다." />
+    <REQUIREMENT NUMBER="4" TITLE="x64 Windows 지원 테스트" RATIONALE="64비트 버전의 Windows와의 호환성을 유지하려면 앱이 처음부터 64비트의 Windows 기반 앱을 지원하거나, 64비트에서 원활하게 실행되는 최소 32비트의 Windows 기반 앱을 지원해야 합니다." />
+    <REQUIREMENT NUMBER="5" TITLE="OS 버전 검사 테스트" RATIONALE="앱은 동등(== 5.1)에 대해 버전 확인을 수행하지 않아야 합니다. 특정 기능이 필요한 경우에는 해당 기능을 사용할 수 있는지 확인하십시오. Windows XP가 필요한 경우 Windows XP 이상(&gt;= 5.1)을 확인하십시오. 그렇게 하면 검색 코드가 이후 버전의 Windows에서 계속 작동합니다. 드라이버 설치 관리자 및 제거 모듈은 OS 버전을 확인하지 않아야 합니다." />
+    <REQUIREMENT NUMBER="6" TITLE="UAC(사용자 계정 컨트롤) 테스트" RATIONALE="대부분의 앱은 실행 시 관리자 권한이 필요하지 않으며 표준 사용자로 실행할 수 있으면 됩니다. 앱을 실행하는 데 필요한 권한을 OS에 알려주는 실행 수준을 정의하려면 Windows 앱에 포함된 매니페스트나 외부 매니페스트가 있어야 합니다." />
+    <REQUIREMENT NUMBER="7" TITLE="시스템 다시 시작 관리자 메시지 준수" RATIONALE="치명적인 작동 중단이 발생할 경우, WM_QUERYENDSESSION에 대한 응답에 시간이 초과된 응용 프로그램은 종료되고, WM_QUERYENDSESSION에 FALSE를 반환하는 응용 프로그램은 WM_ENDSESSION을 받고 종료됩니다." />
+    <REQUIREMENT NUMBER="8" TITLE="안전 모드 테스트" RATIONALE="기본적으로 Windows와 함께 사전 설치되지 않는 드라이버와 서비스는 대부분 안전 모드로 시작되지 않습니다. 시스템 기본 작동이나 진단 및 복구 목적에 필요하지 않은 경우에는 해당 드라이버와 서비스가 사용할 수 없는 상태로 남아 있어야 합니다." />
+    <REQUIREMENT NUMBER="9" TITLE="다중 사용자 세션 테스트" RATIONALE="Windows 사용자는 충돌이나 장애 없이 동시 세션을 실행할 수 있어야 합니다. 앱은 여러 세션에서 로컬이나 원격으로 실행 중일 때 앱의 일반 기능이 영향을 받지 않아야 합니다. 앱 설정 및 데이터 파일은 사용자 간에 유지되지 않아야 합니다. 사용자의 개인 정보 및 기본 설정은 사용자의 세션으로 격리되어야 합니다." />
+    <REQUIREMENT NUMBER="10" TITLE="충돌 및 중단 테스트" RATIONALE="충돌 및 중단과 같은 앱 오류는 사용자에게 큰 영향을 주며 불만의 원인이 됩니다. 그러한 오류를 제거하면 전반적으로 앱 안정성이 향상되고 사용자에게 향상된 앱 환경을 제공할 수 있습니다." />
+    <REQUIREMENT NUMBER="11" TITLE="호환성 및 복구 테스트" RATIONALE="Windows에서는 응용 프로그램이 호환되지 않는 방식으로 작동하는 것을 감지하면 응용 프로그램이 올바르게 동작하도록 호환성 수정을 적용하여 안정적인 사용자 환경을 만듭니다. 호환성 수정은 레거시 응용 프로그램이 Windows에서 올바르게 작동할 수 있도록 하기 위해 제공되는 것이므로 응용 프로그램은 호환성 수정에만 의존하지 않아야 합니다." />
+    <REQUIREMENT NUMBER="12" TITLE="패키지 준수 테스트" RATIONALE="패키지 매니페스트에 한 개 이상의 필수 특성이 없습니다." />
+    <REQUIREMENT NUMBER="13" TITLE="Windows 보안 모범 사례 테스트" RATIONALE="앱이 기본 Windows 보안 설정을 변경하지 않아야 합니다." />
+    <REQUIREMENT NUMBER="14" TITLE="Windows 보안 기능 테스트" RATIONALE="앱은 Windows 보안 기능을 옵트인(opt in)해야 합니다." />
+    <REQUIREMENT NUMBER="15" TITLE="지원되는 API 테스트" RATIONALE="앱은 Windows 스토어 앱용 Windows SDK에서 허용한 API만 참조해야 합니다." />
+    <REQUIREMENT NUMBER="17" TITLE="성능 테스트" RATIONALE="이전에 실행하지 않은 응용 프로그램 간에 빠른 전환 및 멀티태스킹 작업을 수행하려면, 시스템 리소스(CPU, 파일 IO, 메모리 등)를 적게 사용하면서도 빠르고 즉각적으로 응용 프로그램을 실행하거나 일시 중단할 수 있어야 합니다." />
+    <REQUIREMENT NUMBER="19" TITLE="앱 매니페스트 리소스 테스트" RATIONALE="앱 패키지 매니페스트는 앱 패키징 사양 및 앱 매니페스트 스키마에 따라 resources.pri 파일에 유효한 리소스가 정의되어 있어야 합니다." />
+    <REQUIREMENT NUMBER="20" TITLE="디버그 구성 테스트" RATIONALE="앱이 디버그 버전의 이진 파일을 설치하지 않아야 합니다." />
+    <REQUIREMENT NUMBER="21" TITLE="파일 인코딩 테스트" RATIONALE="HTML5 Windows 스토어 앱이 포함된 패키지에 올바른 파일 인코딩이 있어야 합니다." />
+    <REQUIREMENT NUMBER="22" TITLE="Direct3D 기능 테스트" RATIONALE="앱이 Direct3D 기능을 올바르게 사용해야 합니다." />
+    <REQUIREMENT NUMBER="23" TITLE="앱 기능 테스트" RATIONALE="특수 사용 기능을 선언한 패키지는 온보딩 프로세스 중에 사유를 제공해야 합니다." />
+    <REQUIREMENT NUMBER="24" TITLE="Windows 런타임 메타데이터 유효성 검사" RATIONALE="메타데이터가 규칙에 맞아야 하고 모든 생성 원본에서 일치해야 합니다.">
+      <TEST INDEX="56" NAME="ExclusiveTo 특성 테스트" DESCRIPTION="클래스는 다른 ExclusiveTo 클래스로 표시된 인터페이스를 구현하지 않아야 합니다." EXECUTIONTIME="00h:00m:01s.19ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="형식 위치 테스트" DESCRIPTION="형식은 일치하는 가장 긴 네임스페이스를 가진 메타데이터 파일에 정의해야 합니다." EXECUTIONTIME="00h:00m:00s.77ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="유형 이름 대/소문자 구분 테스트" DESCRIPTION="네임스페이스 및 유형 이름은 대/소문자만 다르면 안 됩니다." EXECUTIONTIME="00h:00m:00s.67ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="유형 이름 수정 테스트" DESCRIPTION="시스템 종류만 Windows 네임스페이스에 있을 수 있으며 어떤 종류도 글로벌 네임스페이스에 있을 수 없습니다." EXECUTIONTIME="00h:00m:00s.67ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="일반 메타데이터 수정 테스트" DESCRIPTION="유효하고 올바른 메타데이터 파일은 여러 요구 사항을 충족해야 합니다." EXECUTIONTIME="00h:00m:01s.21ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="속성 테스트" DESCRIPTION="쓰기 전용 및 인덱서 속성을 사용할 수 없습니다. 해당 getter 및 setter 메서드 유형이 일치해야 합니다." EXECUTIONTIME="00h:00m:00s.56ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="패키지 온전성 테스트" RATIONALE="앱 패키지 콘텐츠가 정확한지 확인하기 위한 유효성 검사입니다." />
+    <REQUIREMENT NUMBER="26" TITLE="높은 DPI 지원" RATIONALE="응용 프로그램은 UI가 다양한 높은 DPI 디스플레이 설정에서 일관되게 제대로 표시되도록 DPI 인식을 설정해야 합니다." />
+    <REQUIREMENT NUMBER="27" TITLE="리소스 사용량 테스트" RATIONALE="사용하지 않는 리소스에 대해 close()를 호출하는 데 필요한 WinJS 백그라운드 작업입니다." />
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="06ac7a95-f2e9-4a32-82bd-111fc54b3d3a" Type="Application" Source="AppxPackage" Publisher="CN=Chunghoon" Version="1.0.0.6" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2" PathEvidenceId="0xa" RNP="0x1" DNP="0xd" EvidenceId="0xa" Id="00005a43cc27984b48fd075dca26d9be935200000904">
+        <Indicators>
+          <DirectoryIndicators>
+            <Directory Name="js" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js" RNP="0x9" DNP="0xb" UniqueId="0x1e" Id="0000ed830a2cad918e620bb3cae846c3985ea8ddae26" />
+            <Directory Name="panel" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js\panel" RNP="0x9" DNP="0xb" UniqueId="0x21" Id="0000ab67f92a9d9a83ad797f25d1e2802de5a8e3578d" />
+            <Directory Name="06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2" RNP="0x9" DNP="0xb" UniqueId="0xb" Id="000020aead9cb7a5b3c1078e691fd63440ad17323f4a" />
+            <Directory Name="scripts" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\scripts" RNP="0x9" DNP="0xb" UniqueId="0x12" Id="0000259bac86927a232331c10ec9d5c2cfd65e851e51" />
+          </DirectoryIndicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2">
+              <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+                <Identity Name="06ac7a95-f2e9-4a32-82bd-111fc54b3d3a" Version="1.0.0.6" Publisher="CN=Chunghoon" ProcessorArchitecture="neutral" />
+                <Properties>
+                  <DisplayName>Lotte-winjs</DisplayName>
+                  <PublisherDisplayName>Chunghoon</PublisherDisplayName>
+                  <Logo>images\storelogo.png</Logo>
+                </Properties>
+                <Prerequisites>
+                  <OSMinVersion>6.3.0</OSMinVersion>
+                  <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+                </Prerequisites>
+                <Resources>
+                  <Resource Language="KO-KR" />
+                </Resources>
+                <Applications>
+                  <Application Id="App" StartPage="default.html">
+                    <m2:VisualElements DisplayName="Lotte-winjs" Description="Lotte-winjs" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+                      <m2:SplashScreen Image="images\splashscreen.png" />
+                    </m2:VisualElements>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="internetClient" />
+                </Capabilities>
+                <Dependencies>
+                  <PackageDependency Name="Microsoft.WinJS.2.0" MinVersion="1.0.9600.17018" />
+                </Dependencies>
+              </Package>
+            </PackageManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000d3c85f83ab1698b1815b629b2fba26f6cd7faa09">
+            <File Name="VideoPanel.js" Id="0000cb9969a8a9f65f9b53acad8c837275ad28d2f650" ShortName="VIDEOP~1.JS" Size="0x9ad" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js\panel" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js\panel\videopanel.js" LongPathHash="000092516359e6970954e39e408a6076c40ae6b07693" UniqueId="0x24" />
+            <File Name="PosterPanel.js" Id="0000160df4de34137931d4118c204f0f76fe432ef3d6" ShortName="POSTER~1.JS" Size="0xb21" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js\panel" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js\panel\posterpanel.js" LongPathHash="00009e4bec98b13db74f695cb39829e4055e77c82ff3" UniqueId="0x23" />
+            <File Name="socket.io.js" Id="000039b0b9afc02896fa9e58493e678dae0c9876cc22" ShortName="SOCKET~1.JS" Size="0x2a2d0" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\Scripts" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\scripts\socket.io.js" LongPathHash="0000b992af38a323320160e8a43006a20b332796500e" UniqueId="0x18" />
+            <File Name="jquery-2.1.3.min.js" Id="000041b4bfbaa96be6d1440db6e78004ade1c134e276" ShortName="JQUERY~3.JS" Size="0x14960" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\Scripts" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\scripts\jquery-2.1.3.min.js" LongPathHash="00003774e1ec210f67ab036e9e37929ce94c87bbdb86" UniqueId="0x15" />
+            <File Name="jquery-2.1.3.js" Id="00001852661bd11a09ca9b9cb63d1aa6ff390fffaf4e" ShortName="JQUERY~2.JS" Size="0x3c65b" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\Scripts" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\scripts\jquery-2.1.3.js" LongPathHash="0000fa43fb07b155c198c759a76f74250cdab4694bfa" UniqueId="0x14" />
+            <File Name="jquery-2.1.3.intellisense.js" Id="0000a4bd102c352364bffc96ce0cc64803db227a4954" ShortName="JQUERY~1.JS" Size="0x27a0c" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\Scripts" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\scripts\jquery-2.1.3.intellisense.js" LongPathHash="00000d9cefc551eaa34e0f4577e75e70f74694cbad85" UniqueId="0x13" />
+            <File Name="GuidePanel.js" Id="00006841df9b50d7a75a62f0aa6b053c640559bb808e" ShortName="GUIDEP~1.JS" Size="0x143b" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js\panel" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js\panel\guidepanel.js" LongPathHash="00006499bc3ffc3d8055557c1edc70e77e2b1567974e" UniqueId="0x22" />
+            <File Name="jquery-ui-1.11.4.min.js" Id="00007f650ee30c6a4d3eea04032039b20ff72997559b" ShortName="JQD205~1.JS" Size="0x3ab2b" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\Scripts" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\scripts\jquery-ui-1.11.4.min.js" LongPathHash="000038e2f7ebe4731c2f7fa23bb0c0d7a860de34281f" UniqueId="0x17" />
+            <File Name="jquery-ui-1.11.4.js" Id="00003efaf11e60ea8c541b6dc26f0ef09f195732587a" ShortName="JQUERY~4.JS" Size="0x72e44" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\Scripts" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\scripts\jquery-ui-1.11.4.js" LongPathHash="0000209a6c2e4e0d2012add7fce24dd1156600f0dd5e" UniqueId="0x16" />
+            <File Name="resources.pri" Id="0000effa9ee73546fe66485146c297724710a03b6682" ShortName="RESOUR~1.PRI" Size="0x2a58" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\resources.pri" LongPathHash="00006087df0c1080c52e8f14c5156a67f1b3ce8d6f0e" UniqueId="0xd" />
+            <File Name="default.js" Id="0000375ef479631a3a4017d7e642a615a84f49802fea" Size="0x5ea" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js\default.js" LongPathHash="0000510bd5faea47b301f4b748ba9dabc5269077c846" UniqueId="0x20" />
+            <File Name="default.html" Id="00001079f9e3399bd38e4954c1f69c0ddebde7efc1fa" ShortName="DEFAUL~1.HTM" Size="0x9d1" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\default.html" LongPathHash="00005f57490e7d17fc1082ed4de321305c269db942cd" UniqueId="0xc" />
+            <File Name="app.js" Id="000087bcc0b57b4eef2a7be3c54bf95384025fbc7025" Size="0x5807" BinaryType="UNKNOWN" Created="05/07/2015 08:46:35" Modified="05/07/2015 08:46:35" Path="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\06ac7a95-f2e9-4a32-82bd-111fc54b3d3a_1.0.0.6_neutral__96z1d7kvc7eh2\js\app.js" LongPathHash="000027e3e8c71e5748d5f1c86005891459c8e02414fc" UniqueId="0x1f" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION />
+</REPORT>

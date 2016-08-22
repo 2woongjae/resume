@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Lotte</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 부트스트랩 -->
+    <link href="/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/css/wall.css" rel="stylesheet" media="screen">
+      
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="/javascripts/respond/respond.js"></script>
+    <![endif]-->
+
+  </head>
+	
+  <body>
+		
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-top">
+      <div class="container">
+        <div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="/">VTOUCH LOTTE CINEMA</a>
+	</div>
+	<div id="navbar" class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav">
+	    <li><a href="/wall">Wall</a></li>
+	  </ul>
+          <ul class="nav navbar-nav">
+	    <li><a href="/movie">Movie</a></li>
+	  </ul>
+          <ul class="nav navbar-nav">
+            <li><a href="/system">System</a></li>
+          </ul>
+	  <ul class="nav navbar-nav">
+	    <li><a href="/logout">Logout</a></li>
+	  </ul>
+	</div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+        
+      <div class = "panels">
+          
+        <div id = "movie0" class = "movie" data-toggle="modal" data-target = "#pop_wall">
+          <img src = "" width = "124" />
+        </div>
+        <div id = "movie1" class = "movie" data-toggle="modal" data-target = "#pop_wall">
+          <img src = "" width = "124" />
+        </div>
+        <div id = "movie2" class = "movie" data-toggle="modal" data-target = "#pop_wall">
+          <img src = "" width = "124" />
+        </div>       
+        <div id = "movie3" class = "movie" data-toggle="modal" data-target = "#pop_wall">
+          <img src = "" width = "124" />
+        </div>        
+        <div id = "movie4" class = "movie" data-toggle="modal" data-target = "#pop_wall">
+          <img src = "" width = "124" />
+        </div>        
+        <div id = "movie5" class = "movie" data-toggle="modal" data-target = "#pop_wall">
+          <img src = "" width = "124" />
+        </div>
+        
+      </div>
+        
+      <div class = "btns">
+          
+        <button id = "btn_apply">Apply</button>
+          
+      </div>
+           
+    </div> <!-- /container -->
+      
+    <!-- Modal -->
+    <div class="modal fade" id="pop_wall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">   
+            <input type = "text" class = "form-control" id = "search_text" />
+            <div id = "result"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" id = "btn_remove" data-dismiss="modal">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요한) -->
+    <script src="/javascripts/jquery/1.11.2/jquery-1.11.2.min.js"></script>
+    <!-- 모든 합쳐진 플러그인을 포함하거나 (아래) 필요한 각각의 파일들을 포함하세요 -->
+    <script src="/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+			
+    <script>
+	
+      $(function() {
+
+        $('#search_text').keypress(function(e) {
+          
+          if (e.keyCode == 13) {
+            
+            var search_text = $(this).val();
+          
+            if (search_text == "" || search_text == " ") return;
+      
+            app.search_movie(search_text);
+      
+          }        
+        
+        });
+        
+        $("#movie0").mouseenter(function() {app.setItem(0);});
+        $("#movie1").mouseenter(function() {app.setItem(1);});
+        $("#movie2").mouseenter(function() {app.setItem(2);});
+        $("#movie3").mouseenter(function() {app.setItem(3);});
+        $("#movie4").mouseenter(function() {app.setItem(4);});
+        $("#movie5").mouseenter(function() {app.setItem(5);});
+                
+        $('#pop_wall').on('show.bs.modal', function (e) {
+  
+          app.isMove = false;
+  
+        });
+        
+        $('#pop_wall').on('hidden.bs.modal', function (e) {  
+
+          $("#search_text").val("");
+          $("#result").html("");
+
+          app.isMove = true;
+  
+        });
+        
+        $("#btn_apply").click(function() {
+          
+          $.post("/movie/apply", {movies:JSON.stringify(app.movies)}, function(data) {
+            
+            console.log(data);
+            
+          });
+          
+        });
+        
+        $("#btn_remove").click(function() {
+          
+          app.movies[app.cItem] = {};
+          
+          $("#movie" + app.cItem + " img").attr("src", "");
+          
+        });
+        
+        app.init();
+      
+      });
+      
+      var app = {
+        isMove: true,
+        cItem: -1,
+        movies: [{}, {}, {}, {}, {}, {}]
+      };
+
+      app.setItem = function(_id) {
+
+        if (app.isMove) {
+
+          app.cItem = _id;
+
+        }
+
+      }
+      
+      app.init = function() {
+        
+        $.get("/api/wall", {}, function(data) {
+          
+          app.movies = data.movies;
+
+          for (var i = 0; i < app.movies.length; i++) {
+            
+            $("#movie" + i + " img").attr("src", app.movies[i].poster_url);
+          
+          }
+    
+        });
+        
+      };
+      
+      app.search_movie = function(_text) {
+        
+        $.post("/wall/search", {
+
+          text:_text
+
+        }, function(data) {
+
+          $("#result").html("");
+          
+          for (var i = 0; i < data.length; i++) {
+            
+            $("#result").append("<p class = \"result_item\" id = \"" + data[i].mid + "\">" + data[i].title + "</p>");
+            
+          }
+          
+          $(".result_item").click(function() {
+
+            var c = app.cItem;            
+
+            $('#pop_wall').modal('hide');
+            app.reload_poster(c, this.id);
+                
+          });
+
+        });
+
+      };
+      
+      app.reload_poster = function(_c, _id) { 
+
+        $.get("/movie/" + _id, function(data) {
+          
+          app.movies[_c] = data;
+          
+          $("#movie" + _c + " img").attr("src", data.poster_url);
+          
+        });
+        
+      };
+  
+    </script>
+		
+  </body>
+	
+</html>

@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-FO24LGP</Machine>
+    <WindowsUser>UX Lab</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>Lotte</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bin\x64\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\04_introduce.mp3">
+      <PackagePath>audio\04_introduce.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\06_first use.mp3">
+      <PackagePath>audio\06_first use.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\1.mp3">
+      <PackagePath>audio\1.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\12.mp3">
+      <PackagePath>audio\12.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\13.mp3">
+      <PackagePath>audio\13.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\3.mp3">
+      <PackagePath>audio\3.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\4.mp3">
+      <PackagePath>audio\4.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\5.mp3">
+      <PackagePath>audio\5.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\6.mp3">
+      <PackagePath>audio\6.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\7.mp3">
+      <PackagePath>audio\7.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\8.mp3">
+      <PackagePath>audio\8.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\audio\9.mp3">
+      <PackagePath>audio\9.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\accordion.css">
+      <PackagePath>Content\themes\base\accordion.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\all.css">
+      <PackagePath>Content\themes\base\all.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\autocomplete.css">
+      <PackagePath>Content\themes\base\autocomplete.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\base.css">
+      <PackagePath>Content\themes\base\base.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\button.css">
+      <PackagePath>Content\themes\base\button.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\core.css">
+      <PackagePath>Content\themes\base\core.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\datepicker.css">
+      <PackagePath>Content\themes\base\datepicker.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\dialog.css">
+      <PackagePath>Content\themes\base\dialog.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\draggable.css">
+      <PackagePath>Content\themes\base\draggable.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\menu.css">
+      <PackagePath>Content\themes\base\menu.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\progressbar.css">
+      <PackagePath>Content\themes\base\progressbar.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\resizable.css">
+      <PackagePath>Content\themes\base\resizable.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\selectable.css">
+      <PackagePath>Content\themes\base\selectable.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\selectmenu.css">
+      <PackagePath>Content\themes\base\selectmenu.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\slider.css">
+      <PackagePath>Content\themes\base\slider.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\sortable.css">
+      <PackagePath>Content\themes\base\sortable.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\spinner.css">
+      <PackagePath>Content\themes\base\spinner.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\tabs.css">
+      <PackagePath>Content\themes\base\tabs.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\theme.css">
+      <PackagePath>Content\themes\base\theme.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\tooltip.css">
+      <PackagePath>Content\themes\base\tooltip.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\css\font.css">
+      <PackagePath>css\font.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\css\panel\GuidePanel.css">
+      <PackagePath>css\panel\GuidePanel.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\css\panel\PosterPanel.css">
+      <PackagePath>css\panel\PosterPanel.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\css\panel\VideoPanel.css">
+      <PackagePath>css\panel\VideoPanel.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <PackagePath>Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png">
+      <PackagePath>Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png">
+      <PackagePath>Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <PackagePath>Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-icons_222222_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_222222_256x240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-icons_2e83ff_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_2e83ff_256x240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-icons_454545_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_454545_256x240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-icons_888888_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_888888_256x240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Content\themes\base\images\ui-icons_cd0a0a_256x240.png">
+      <PackagePath>Content\themes\base\images\ui-icons_cd0a0a_256x240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\dart_green.png">
+      <PackagePath>images\dartview\dart_green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\dart_red.png">
+      <PackagePath>images\dartview\dart_red.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\green_multi_nor.png">
+      <PackagePath>images\dartview\green_multi_nor.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\green_multi_sel.png">
+      <PackagePath>images\dartview\green_multi_sel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\green_nor.png">
+      <PackagePath>images\dartview\green_nor.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\green_sel.png">
+      <PackagePath>images\dartview\green_sel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\red_multi_nor.png">
+      <PackagePath>images\dartview\red_multi_nor.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\red_multi_sel.png">
+      <PackagePath>images\dartview\red_multi_sel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\red_nor.png">
+      <PackagePath>images\dartview\red_nor.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\dartview\red_sel.png">
+      <PackagePath>images\dartview\red_sel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\back.png">
+      <PackagePath>images\guideview\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\bg_02.png">
+      <PackagePath>images\guideview\bg_02.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\hand_04.png">
+      <PackagePath>images\guideview\hand_04.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\idle1.png">
+      <PackagePath>images\guideview\idle1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\idle2.png">
+      <PackagePath>images\guideview\idle2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\left.png">
+      <PackagePath>images\guideview\left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\lock.png">
+      <PackagePath>images\guideview\lock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\right.png">
+      <PackagePath>images\guideview\right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\unlock_01.png">
+      <PackagePath>images\guideview\unlock_01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\unlock_02.png">
+      <PackagePath>images\guideview\unlock_02.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\want.png">
+      <PackagePath>images\guideview\want.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\posterview\light_04.png">
+      <PackagePath>images\posterview\light_04.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\posterview\select.png">
+      <PackagePath>images\posterview\select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\videoview\popup_effect.png">
+      <PackagePath>images\videoview\popup_effect.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\font\NotoSans-Bold.otf">
+      <PackagePath>font\NotoSans-Bold.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\images\guideview\Lotte_trailer_video_3.mp4">
+      <PackagePath>images\guideview\Lotte_trailer_video_3.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\js\app\controller\app.js">
+      <PackagePath>js\app\controller\app.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\js\app\controller\guide.js">
+      <PackagePath>js\app\controller\guide.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\js\app\controller\poster.js">
+      <PackagePath>js\app\controller\poster.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\js\app\controller\sprite.js">
+      <PackagePath>js\app\controller\sprite.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\js\app\controller\video.js">
+      <PackagePath>js\app\controller\video.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\js\app\main.js">
+      <PackagePath>js\app\main.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\js\lib\require.js">
+      <PackagePath>js\lib\require.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Scripts\jquery-2.1.3.intellisense.js">
+      <PackagePath>Scripts\jquery-2.1.3.intellisense.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Scripts\jquery-2.1.3.js">
+      <PackagePath>Scripts\jquery-2.1.3.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Scripts\jquery-2.1.3.min.js">
+      <PackagePath>Scripts\jquery-2.1.3.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Scripts\jquery-ui-1.11.4.js">
+      <PackagePath>Scripts\jquery-ui-1.11.4.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Scripts\jquery-ui-1.11.4.min.js">
+      <PackagePath>Scripts\jquery-ui-1.11.4.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Scripts\socket.io.js">
+      <PackagePath>Scripts\socket.io.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\packages.config">
+      <PackagePath>packages.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\Scripts\jquery-2.1.3.min.map">
+      <PackagePath>Scripts\jquery-2.1.3.min.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bin\x64\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

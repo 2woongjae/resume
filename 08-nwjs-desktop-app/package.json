@@ -1,0 +1,19 @@
+{
+  "name": "nwjs-desktop-app",
+  "version": "0.7.24",
+  "main": "default.html",
+  "window": {
+    "position": "center",
+  	"min_width": 880,
+    "min_height": 930,
+    "width": 880,
+    "height": 930,
+    "show": false,
+    "title": "Hyundai",
+    "resizable":false,
+    "toolbar": false,
+    "frame":false,
+    "fullscreen":false,
+    "icon":"icon.png"
+  }
+}

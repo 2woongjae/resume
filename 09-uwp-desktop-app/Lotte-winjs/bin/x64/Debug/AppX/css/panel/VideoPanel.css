@@ -1,0 +1,17 @@
+﻿
+/* VideoView - Third Monitor*/
+#VideoPanel{
+    position:absolute;
+    left:3840px;
+    top:0px;
+    width:1920px;
+    height:1080px;
+}
+
+#VideoPanel .video{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width : 100%;
+    height:100%;
+}

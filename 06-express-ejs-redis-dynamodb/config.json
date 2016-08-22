@@ -1,0 +1,20 @@
+{
+	"development":{
+		"mongodb":"10.0.20.225/lotte",
+		"redis_host":"10.0.20.68",
+		"redis_port":6379,
+		"redis_prefix":"lotte_dev:",
+		"redis_ttl":60,
+		"redis_pass":"vtouch0419",
+		"salt":"vtouch0419"
+	},
+	"production":{
+		"mongodb":"10.0.20.225/lotte",
+		"redis_host":"10.0.20.68",
+		"redis_port":6379,
+		"redis_prefix":"lotte:",
+		"redis_ttl":3600,
+		"redis_pass":"vtouch0419",
+		"salt":"vtouch0419"
+	}	
+}

@@ -1,0 +1,9 @@
+{
+    "auto": false,
+    "host": "http://lotte.vtouchinc.com",
+    "type": "LOTTESE",
+    "sync": true,
+    "time": 60000,
+    "local": "C:\\Users\\VTouch_TV_Dev\\Desktop\\sync",
+    "remote": "s3://vtouch-logs/lotte"
+}

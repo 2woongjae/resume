@@ -1,0 +1,90 @@
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bin\Release\AppxManifest.xml
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bin\Release\Lotte-winjs.build.appxrecipe
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\priconfig.xml
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\priconfig.xml.intermediate
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\layout.resfiles
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\layout.resfiles.intermediate
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\resources.resfiles
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\resources.resfiles.intermediate
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\pri.resfiles
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\pri.resfiles.intermediate
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\qualifiers.txt
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\qualifiers.txt.intermediate
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\MultipleQualifiersPerDimensionFound.txt
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\ProjectArchitectures.txt
+D:\16. Lotte\Lotte-winjs\Lotte-winjs\bin\Release\ReverseMap\resources.pri
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bin\Release\ReverseMap\resources.pri
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bin\Release\AppxManifest.xml
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bin\Release\Lotte-winjs.build.appxrecipe
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\priconfig.xml
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\priconfig.xml.intermediate
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\layout.resfiles
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\layout.resfiles.intermediate
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\resources.resfiles
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\resources.resfiles.intermediate
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\pri.resfiles
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\pri.resfiles.intermediate
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\qualifiers.txt
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\qualifiers.txt.intermediate
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\MultipleQualifiersPerDimensionFound.txt
+E:\100Project\16. Lotte\Lotte-winjs\Lotte-winjs\bld\Release\ProjectArchitectures.txt
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bin\Release\ReverseMap\resources.pri
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bin\Release\AppxManifest.xml
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bin\Release\Lotte-winjs.build.appxrecipe
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\priconfig.xml
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\priconfig.xml.intermediate
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\layout.resfiles
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\layout.resfiles.intermediate
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\resources.resfiles
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\resources.resfiles.intermediate
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\pri.resfiles
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\pri.resfiles.intermediate
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\qualifiers.txt
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\qualifiers.txt.intermediate
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\LotteCinema\Desktop\NewLotte\Lotte-winjs\bld\Release\ProjectArchitectures.txt
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bin\Release\ReverseMap\resources.pri
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bin\Release\AppxManifest.xml
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bin\Release\Lotte-winjs.build.appxrecipe
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\priconfig.xml
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\priconfig.xml.intermediate
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\layout.resfiles
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\layout.resfiles.intermediate
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\resources.resfiles
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\resources.resfiles.intermediate
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\pri.resfiles
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\pri.resfiles.intermediate
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\qualifiers.txt
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\qualifiers.txt.intermediate
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\MultipleQualifiersPerDimensionFound.txt
+E:\VTOUCH\Lotte_0616\NewLotte\Lotte-winjs\bld\Release\ProjectArchitectures.txt
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bin\Release\ReverseMap\resources.pri
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bin\Release\AppxManifest.xml
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bin\Release\Lotte-winjs.build.appxrecipe
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\priconfig.xml
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\priconfig.xml.intermediate
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\layout.resfiles
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\layout.resfiles.intermediate
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\resources.resfiles
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\resources.resfiles.intermediate
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\pri.resfiles
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\pri.resfiles.intermediate
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\qualifiers.txt
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\qualifiers.txt.intermediate
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\MultipleQualifiersPerDimensionFound.txt
+E:\VTOUCH\Lotte_0616\Lotte_0622\Lotte-winjs\bld\Release\ProjectArchitectures.txt
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bin\Release\ReverseMap\resources.pri
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bin\Release\AppxManifest.xml
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bin\Release\Lotte-winjs.build.appxrecipe
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\priconfig.xml
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\priconfig.xml.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\layout.resfiles
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\layout.resfiles.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\resources.resfiles
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\resources.resfiles.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\pri.resfiles
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\pri.resfiles.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\qualifiers.txt
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\qualifiers.txt.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\Release\ProjectArchitectures.txt

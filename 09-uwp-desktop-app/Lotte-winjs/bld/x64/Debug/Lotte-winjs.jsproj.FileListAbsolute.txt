@@ -1,0 +1,30 @@
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bin\x64\Debug\ReverseMap\resources.pri
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bin\x64\Debug\AppxManifest.xml
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bin\x64\Debug\Lotte-winjs.build.appxrecipe
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\priconfig.xml
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\priconfig.xml.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\layout.resfiles
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\layout.resfiles.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\resources.resfiles
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\resources.resfiles.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\pri.resfiles
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\pri.resfiles.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\qualifiers.txt
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\qualifiers.txt.intermediate
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\LotteCinema\Desktop\VTOUCH\Lotte_0622\Lotte-winjs\bld\x64\Debug\ProjectArchitectures.txt
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bin\x64\Debug\ReverseMap\resources.pri
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bin\x64\Debug\AppxManifest.xml
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bin\x64\Debug\Lotte-winjs.build.appxrecipe
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\priconfig.xml
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\priconfig.xml.intermediate
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\layout.resfiles
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\layout.resfiles.intermediate
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\resources.resfiles
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\resources.resfiles.intermediate
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\pri.resfiles
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\pri.resfiles.intermediate
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\qualifiers.txt
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\qualifiers.txt.intermediate
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\UX Lab\Desktop\Lotte\Lotte_0622\Lotte-winjs\bld\x64\Debug\ProjectArchitectures.txt
