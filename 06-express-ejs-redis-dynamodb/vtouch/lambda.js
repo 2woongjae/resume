@@ -1,19 +1,21 @@
-var AWS = require("aws-sdk");
+'use strict';
+
+const AWS = require("aws-sdk");
 
 AWS.config = {
   region: 'ap-northeast-1'
 };
 
-var lambda = new AWS.Lambda({apiVersion: '2015-03-31'});
+const lambda = new AWS.Lambda({apiVersion: '2015-03-31'});
 
-var execLambda = function(payload, callback) {
+const execLambda = (payload, callback) => {
 
-  var params = {
+  const params = {
     FunctionName: 'lotte-dynamo',
     Payload: JSON.stringify(payload)
   };
 
-  lambda.invoke(params, function(err, data) {
+  lambda.invoke(params, (err, data) => {
 
     if (err)
       console.log('lambda 실패');

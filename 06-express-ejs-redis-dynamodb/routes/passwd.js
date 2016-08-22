@@ -1,14 +1,16 @@
-var crypto = require('crypto'); // 내장 모듈
+'use strict';
 
-var len = 128; // Bytesize.
-var iterations = 12000; // Iterations. ~300ms
+const crypto = require('crypto'); // 내장 모듈
 
-exports.hash = function (pwd, salt, _callback) {
+const len = 128; // Bytesize.
+const iterations = 12000; // Iterations. ~300ms
+
+exports.hash = (pwd, salt, _callback) => {
   
   // 3개짜리 인자 => 암호화 결과 (정해진 salt)
-  if (3 == arguments.length) {
+  if (3 === arguments.length) {
   
-    crypto.pbkdf2(pwd, salt, iterations, len, function(err, hash){
+    crypto.pbkdf2(pwd, salt, iterations, len, (err, hash) => {
       
       // # 에러 콜백
       if (err) return __callback(err);
@@ -18,18 +20,18 @@ exports.hash = function (pwd, salt, _callback) {
     
     });
   
-  } else if (2 == arguments.length) { // 2개 짜리 인자 => 암호화 결과 (랜덤한 salt)
+  } else if (2 === arguments.length) { // 2개 짜리 인자 => 암호화 결과 (랜덤한 salt)
         
     _callback = salt;
     
-    crypto.randomBytes(len, function(err, salt){
+    crypto.randomBytes(len, (err, salt) => {
       
       // # 에러 콜백
       if (err) return __callback(err);
       
       salt = salt.toString('base64');
       
-      crypto.pbkdf2(pwd, salt, iterations, len, function(err, hash){
+      crypto.pbkdf2(pwd, salt, iterations, len, (err, hash) => {
 
         // # 에러 콜백
         if (err) return _callback(err);

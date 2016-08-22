@@ -9,8 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/vtouchinc/lotte-client.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Woongjae Lee <@2woongjae>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vtouchinc/lotte-client/issues"

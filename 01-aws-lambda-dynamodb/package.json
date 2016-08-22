@@ -1,7 +1,6 @@
 {
   "name": "aws-lambda-dynamodb",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "zip -r upload.zip ./* && aws lambda update-function-code --function-name lotte-dynamo --zip-file fileb://upload.zip --profile lambda && rm -rf ./upload.zip",

@@ -1,26 +1,28 @@
-var moment = require('moment');
-var express = require('express');
-var router = express.Router();
-var execLambda = require('../vtouch/lambda');
+'use strict';
+
+const moment = require('moment');
+const express = require('express');
+const router = express.Router();
+const execLambda = require('../vtouch/lambda');
 require('date-utils');
 
-var mongojs = require('mongojs');
+const mongojs = require('mongojs');
 
 /* 서버가 다운인지 체크하는 함수 */
-router.get("/check", function(req, res) {
+router.get('/check', (req, res) => {
 
-  res.send("Y");
+  res.send('Y');
 
 });
 
 /* 시간 기준으로 영화가 바뀌었는지 체크하는 함수 */
-router.get("/update/:time", function(req, res) {
+router.get('/update/:time', (req, res) => {
 
-  var time = req.params.time;
+  const time = req.params.time;
 
   execLambda({
     operation: 'getLastWall'
-  }, function(data) {
+  }, (data) => {
 
     if (data.id === undefined) res.send('N');
     else {
@@ -35,91 +37,91 @@ router.get("/update/:time", function(req, res) {
 });
 
 /* 영화 아이디로 클릭을 체크 */
-router.get("/like/:id", function(req, res) {
+router.get('/like/:id', (req, res) => {
 
-  var mongodb = req.app.locals.config.mongodb;
+  const mongodb = req.app.locals.config.mongodb;
 	
-  var mid = req.params.id;
-  var wall = "신도림";
-  var time = moment().utcOffset('+09:00').format('YYYYMMDDHHmmss');
-  var ip = req.ip;
+  const mid = req.params.id;
+  const wall = "신도림";
+  const time = moment().utcOffset('+09:00').format('YYYYMMDDHHmmss');
+  const ip = req.ip;
 	
-  var like = {
+  const like = {
     movie: mid,
     wall: wall,
     reg_date: time,
     reg_ip: ip
   }
 
-  var db = mongojs(mongodb, ['like']);
-  db.like.insert(like, function() {
+  const db = mongojs(mongodb, ['like']);
+  db.like.insert(like, () => {
 	
     db.close();
-    res.send("Y");
+    res.send('Y');
 		
   });
 
 });
 
 /* */
-router.get("/like", function(req, res) {
+router.get('/like', (req, res) => {
 
-  var mongodb = req.app.locals.config.mongodb;	// db
+  const mongodb = req.app.locals.config.mongodb;
 	
-  var db = mongojs(mongodb, ['like']);
-  db.like.find({reg_date: { $gt: "20151110000000" }}, function(error, data) {
+  const db = mongojs(mongodb, ['like']);
+  db.like.find({reg_date: { $gt: '20151110000000' }}, (error, data) => {
 		
     db.close();
 
     if (data.length > 0) res.send(data);
-    else res.send("N");
+    else res.send('N');
 		
   });
 
 });
 
 /* 영화 아이디로 영화 객체 리턴 */
-router.get("/movie/:id", function(req, res) {
+router.get('/movie/:id', (req, res) => {
 	
-  var mid = req.params.id;
+  const mid = req.params.id;
 
   execLambda({
     operation: 'getMovie',
     payload: {
       mid: mid
     }
-  }, function(data) {
+  }, data => {
 
     if (data.mid !== undefined) res.send(data);
-    else res.send("N");
+    else res.send('N');
 
   });
 
 });
 
 /* 영화 객체 전체를 배열로 리턴 */
-router.get("/movie", function(req, res) {
+router.get('/movie', (req, res) => {
 	
   execLambda({
     operation: 'getMovies'
-  }, function(data) {
+  }, data => {
 
     if (data.length > 0) res.send(data);
-    else res.send("N");
+    else res.send('N');
 
   });
 
 });
 
 /* 가장 최신 무비월 객체를 리턴 */
-router.get("/wall", function(req, res) {
+router.get('/wall', (req, res) => {
 
   execLambda({
     operation: 'getLastWall'
-  }, function(data) {
+  }, data => {
 
     if (data.id !== undefined) res.send(data);
-    else res.send("N");
+    else res.send('N');
 
   });
 

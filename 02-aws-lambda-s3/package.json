@@ -1,7 +1,6 @@
 {
   "name": "aws-lambda-s3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "rm -rf ./upload.zip && zip -r upload.zip ./* && aws lambda update-function-code --function-name lotte-report --zip-file fileb://upload.zip --profile lambda && rm -rf ./upload.zip",

@@ -1,66 +1,68 @@
-var insert = require('./insert');
-var express = require('express');
-var mongojs = require('mongojs');
-var router = express.Router();
-var fs = require('fs');
+'use strict';
+
+const insert = require('./insert');
+const express = require('express');
+const mongojs = require('mongojs');
+const router = express.Router();
+const fs = require('fs');
 require('date-utils');
-var multer = require('multer');
-var path = require('path');
-var upload = multer({
-  dest:"/home/ubuntu/lotte-server/public/upload/"
+const multer = require('multer');
+const path = require('path');
+const upload = multer({
+  dest: '/home/ubuntu/lotte-server/public/upload/'
 });
 
-var AWS = require("aws-sdk");
+const AWS = require('aws-sdk');
 
 AWS.config = {
   region: 'ap-northeast-2'
 };
 
-var s3 = new AWS.S3({signatureVersion: 'v4'});
+const s3 = new AWS.S3({signatureVersion: 'v4'});
 
-var sendMail = require('../vtouch/sns');
-var execLambda = require('../vtouch/lambda');
+const sendMail = require('../vtouch/sns');
+const execLambda = require('../vtouch/lambda');
 
-var hash = require('./passwd').hash;
+const hash = require('./passwd').hash;
 
 sendMail('LOTTE-SERVER restart', '서버가 재시작되었습니다.');
 
-router.get('/system', function(req, res) {
+router.get('/system', (req, res) => {
 
-  if (req.session.login) res.render("system.html");
-  else res.redirect("/login");
+  if (req.session.login) res.render('system.html');
+  else res.redirect('/login');
 
 });
 
-router.get('/', function(req, res) {
+router.get('/', (req, res) => {
   	
-  if (req.session.login) res.render("index.html");
-  else res.redirect("/login");
+  if (req.session.login) res.render('index.html');
+  else res.redirect('/login');
 
 });
 
-router.get('/login', function(req, res) {
+router.get('/login', (req, res) => {
 
-  if (req.session.login) res.redirect("/");
-  else res.render("login.html");
+  if (req.session.login) res.redirect('/');
+  else res.render('login.html');
   
 });
 
 /* 로그인 submit [post] */
-router.post('/login', function(req, res) {
+router.post('/login', (req, res) => {
   
-  if (req.session.login) res.redirect("/");
+  if (req.session.login) res.redirect('/');
   else {
 
-    var mongodb = req.app.locals.config.mongodb;	// db
-    var salt = req.app.locals.config.salt;		// salt
+    const mongodb = req.app.locals.config.mongodb;	// db
+    const salt = req.app.locals.config.salt;		// salt
 
     // post
-    var email = req.body.email;
-    var passwd = req.body.passwd;
+    const email = req.body.email;
+    const passwd = req.body.passwd;
 
-    var db = mongojs(mongodb, ['user']);
-    db.user.find({"email":email}, function(error, data) {
+    const db = mongojs(mongodb, ['user']);
+    db.user.find({"email":email}, (error, data) => {
 
       db.close();
 
@@ -68,9 +70,9 @@ router.post('/login', function(req, res) {
 
       if (data.length > 0) {
 
-        hash(passwd, salt, function(err, str) {
+        hash(passwd, salt, (err, str) => {
 
-          if (err) res.redirect("/");
+          if (err) res.redirect('/');
 
           if (data[0].passwd === str) {
 
@@ -79,11 +81,11 @@ router.post('/login', function(req, res) {
 
           }
 
-          res.redirect("/");
+          res.redirect('/');
 
         });
 
-      } else res.redirect("/");
+      } else res.redirect('/');
       
     });
         
@@ -91,33 +93,33 @@ router.post('/login', function(req, res) {
   
 });
 
-router.get('/logout', function(req, res) {
+router.get('/logout', (req, res) => {
   
   if (req.session.login) {
 	  
-    req.session.destroy(function() {
+    req.session.destroy(() => {
 
-      res.redirect("/");
+      res.redirect('/');
 
     });
 	
-  } else res.redirect("/");
+  } else res.redirect('/');
   
 });
 
-router.get('/movie', function(req, res) {
+router.get('/movie', (req, res) => {
   
-  if (!req.session.login) res.redirect("/");
+  if (!req.session.login) res.redirect('/');
   
-  else res.render("movie/list.html");
+  else res.render('movie/list.html');
 	
 });
 
-router.get('/movie/add', function(req, res) {
+router.get('/movie/add', (req, res) => {
   
-  if (!req.session.login) res.redirect("/");
+  if (!req.session.login) res.redirect('/');
   
-  else res.render("movie/add.html");
+  else res.render('movie/add.html');
 	
 });
 
@@ -125,7 +127,7 @@ function s3Upload(type, path, filename) {
 
   var key = (type === 'wmv') ? 'lotte/movie/' : 'lotte/poster/';
 
-  fs.readFile(path + filename, function(err, file_buffer) {
+  fs.readFile(path + filename, (err, file_buffer) => {
 
     if (err) {
 
@@ -139,7 +141,7 @@ function s3Upload(type, path, filename) {
       Bucket: 'public.vtouchinc.com',
       Key: key + filename,
       Body: file_buffer
-    }, function (err, data) {
+    }, (err, data) => {
 
       if (err) {
 
@@ -159,44 +161,43 @@ function s3Upload(type, path, filename) {
 
 }
 
-router.post("/movie/add", upload.array("files", 2), function(req, res) {
+router.post('/movie/add', upload.array('files', 2), (req, res) => {
 
   if (!req.session.login) {
 
-    res.redirect("/");
+    res.redirect('/');
 
   } else {
 
-    var mongodb = req.app.locals.config.mongodb;	// db
+    const mongodb = req.app.locals.config.mongodb;
 	
-    // post
-    var title = req.body.title;
-    var files = req.files;
-    var time = new Date();
-    var time_str = time.toFormat('YYYYMMDDHH24MISS');
-    var email = req.session.email;
-    var ip = req.ip;
+    const title = req.body.title;
+    const files = req.files;
+    const time = new Date();
+    const time_str = time.toFormat('YYYYMMDDHH24MISS');
+    const email = req.session.email;
+    const ip = req.ip;
 	
     // object
-    var movie = {
-      title:title,
-      reg_date:time_str,
-      reg_id:email,
-      reg_ip:ip
+    const movie = {
+      title: title,
+      reg_date: time_str,
+      reg_id: email,
+      reg_ip: ip
     };
 	
-    for (var i = 0; i < files.length; i++) {
+    for (let i = 0; i < files.length; i++) {
 		
       if (i === 0) {
 
-        fs.renameSync(files[i].path, '/home/ubuntu/lotte-server/public/upload/' + files[i].filename + ".jpg");
-        movie.poster_url = "http://public.vtouchinc.com/lotte/poster/" + files[i].filename + ".jpg";
+        fs.renameSync(files[i].path, '/home/ubuntu/lotte-server/public/upload/' + files[i].filename + '.jpg');
+        movie.poster_url = 'http://public.vtouchinc.com/lotte/poster/' + files[i].filename + '.jpg';
         s3Upload('jpg', '/home/ubuntu/lotte-server/public/upload/', files[i].filename + '.jpg');			
 
       } else {
 				
-        fs.renameSync(files[i].path, '/home/ubuntu/lotte-server/public/upload/' + files[i].filename + ".wmv");
-        movie.video_url = "http://public.vtouchinc.com/lotte/movie/" + files[i].filename + ".wmv";
+        fs.renameSync(files[i].path, '/home/ubuntu/lotte-server/public/upload/' + files[i].filename + '.wmv');
+        movie.video_url = 'http://public.vtouchinc.com/lotte/movie/' + files[i].filename + '.wmv';
         s3Upload('wmv', '/home/ubuntu/lotte-server/public/upload/', files[i].filename + '.wmv');
 
       }
@@ -206,7 +207,7 @@ router.post("/movie/add", upload.array("files", 2), function(req, res) {
     execLambda({
       operation: 'setMovie',
       payload: movie
-    }, function(data) {
+    }, data => {
 
       res.redirect('/movie');
 
@@ -217,13 +218,13 @@ router.post("/movie/add", upload.array("files", 2), function(req, res) {
 });
 
 // json
-router.get("/list", function(req, res) {
+router.get('/list', (req, res) => {
 
-  if (!req.session.login) res.redirect("/");
+  if (!req.session.login) res.redirect('/');
 	
   else {
 
-    execLambda({operation: 'getMovies'}, function(data) {
+    execLambda({operation: 'getMovies'}, data => {
 
       res.send(data);
 
@@ -233,27 +234,27 @@ router.get("/list", function(req, res) {
 
 });
 
-router.get('/wall', function(req, res) {
+router.get('/wall', (req, res) => {
   
-  if (!req.session.login) res.redirect("/");
-  else res.render("wall/index.html");
+  if (!req.session.login) res.redirect('/');
+  else res.render('wall/index.html');
 	
 });
 
-router.post("/wall/search", function(req, res) {
+router.post('/wall/search', (req, res) => {
 
-  if (!req.session.login) res.redirect("/");
+  if (!req.session.login) res.redirect('/');
 	  
   else {
 
-    var text = req.body.text;
+    const text = req.body.text;
 
     execLambda({
       operation: 'searchMovies',
       payload: {
         text: text
       }
-    }, function(data) {
+    }, data => {
 
       res.send(data);
 
@@ -263,20 +264,20 @@ router.post("/wall/search", function(req, res) {
 
 });
 
-router.get("/movie/:id", function(req, res) {
+router.get('/movie/:id', (req, res) => {
 
-  if (!req.session.login) res.redirect("/");
+  if (!req.session.login) res.redirect('/');
 	
   else {
 
-    var id = req.params.id;
+    const id = req.params.id;
 
     execLambda({
       operation: 'getMovie',
       payload: {
         mid: id
       }
-    }, function(data) {
+    }, data => {
 
       res.send(data);
 
@@ -286,33 +287,33 @@ router.get("/movie/:id", function(req, res) {
 
 });
 
-router.post("/movie/apply", function(req, res) {
+router.post('/movie/apply', (req, res) => {
 
-  if (!req.session.login) res.redirect("/");
+  if (!req.session.login) res.redirect('/');
 
   else {
 	
-    var location = "신도림";
-    var movies = JSON.parse(req.body.movies);
-    var time = new Date();
-    var time_str = time.toFormat('YYYYMMDDHH24MISS');
-    var email = req.session.email;
-    var ip = req.ip;
+    const location = '신도림';
+    const movies = JSON.parse(req.body.movies);
+    const time = new Date();
+    const time_str = time.toFormat('YYYYMMDDHH24MISS');
+    const email = req.session.email;
+    const ip = req.ip;
 
-    var wall = {
-      location:location,
-      movies:movies,
-      reg_date:time_str,
-      reg_id:email,
-      reg_ip:ip
+    const wall = {
+      location: location,
+      movies: movies,
+      reg_date: time_str,
+      reg_id: email,
+      reg_ip: ip
     };
 
     execLambda({
       operation: 'setWall',
       payload: wall
-    }, function(data) {
+    }, data => {
 
-      res.redirect("/wall");
+      res.redirect('/wall');
 
     });
 
